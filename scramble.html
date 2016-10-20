@@ -14,7 +14,11 @@
         var WORDS     = ["booger", "apple", "hackbright", "mango"];
         var SCRAMBLED = ["oogreb", "papel", "backrhight", "goman"];
 
-
+        // This is awesome!
+        // It turns out that JS uses comparative sort (is n+1 greater or lesser
+        // than n?) using -1,0,1. You can manipulate this in real-time by passing
+        // a function to sort which returns a random number between -0.5 and 0.5,
+        // effectively tricking the sort algorithm into randomizing instead.
         function shuffler(str) {
             var shuffled = str.split('').sort(
                 function shuffled(){
